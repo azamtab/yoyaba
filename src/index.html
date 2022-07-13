@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html class="text-white bg-gray-900">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link href="./index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div
+      class="bg-[length:80%] bg-no-repeat"
+      style="background-image: url('Images/intro-bg.png')"
+    >
+      <header class="w-full h-16 drop-shadow-lg z-40 relative">
+        <div
+          class="container px-4 md:px-0 h-full mx-auto flex justify-between items-center"
+        >
+          <!-- START: Logo  -->
+          <a class="text-L font-bold" href="https://yoyaba.com"
+            ><img
+              src="Images/logo.png"
+              alt="Logo"
+              class="h-8 w-8 mr-2 inline-block"
+            />YOYABA</a
+          >
+          <!-- END: Logo  -->
+
+          <!-- START: Menu links -->
+          <ul
+            id="menu"
+            class="hidden fixed inset-0 px-10 py-16 bg-gray-800 z-50 sm:relative sm:flex sm:p-0 sm:bg-transparent sm:flex-row sm:space-x-6"
+          >
+            <li class="sm:hidden z-90 fixed top-4 right-6">
+              <a
+                href="javascript:void(0)"
+                class="text-right text-white text-sm"
+                onclick="yoyaba.toggleMenu()"
+                >&times;</a
+              >
+            </li>
+
+            <li>
+              <a
+                class="text-white opacity-70 hover:opacity-100 duration-300 text-xs"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-white opacity-70 hover:opacity-100 duration-300 text-xs"
+                href="#"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-white opacity-70 hover:opacity-100 duration-300 text-xs"
+                href="#"
+                >Store</a
+              >
+            </li>
+
+            <li>
+              <a
+                class="text-white opacity-70 hover:opacity-100 duration-300 text-xs"
+                href="#"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-white opacity-70 hover:opacity-100 duration-300 text-xs"
+                href="#"
+                >News</a
+              >
+            </li>
+            <li>
+              <a
+                class="text-white opacity-70 hover:opacity-100 duration-300 text-xs"
+                href="#"
+                >Contact</a
+              >
+            </li>
+          </ul>
+
+          <div class="flex items-center sm:hidden">
+            <button
+              class="text-white text-4xl font-bold opacity-70 hover:opacity-100 duration-300"
+              onclick="yoyaba.toggleMenu()"
+            >
+              &#9776;
+            </button>
+          </div>
+          <!-- END: Menu links -->
+        </div>
+      </header>
+
+      <!-- START: Intro-->
+      <div class="p-8">
+        <div class="relative flex sm:mt-10">
+          <div class="relative w-full sm:w-3/5 flex justify-center">
+            <div class="flex justify-center relative z-10 flex-col">
+              <h1 class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl mb-8">
+                Wir sind<br />
+                Web-Architekten
+              </h1>
+              <h3 class="text-base sm:text-lg max-w-md">
+                Als Web- und Softwareagentur kreieren wir WordPress Websites,
+                Webshops & Mehr. Du hast ein Projekt? Wir machen es zur
+                Realität.
+              </h3>
+              <br />
+              <button
+                type="button"
+                class="focus:outline-none font-bold text-black bg-emerald-100 hover:bg-emerald-300 focus:ring-4 focus:ring-emerald-100 font-medium rounded-lg text-sm px-11 py-2.5 mr-2 mb-2 dark:focus:ring-emerald-700 self-start"
+              >
+                Let's talk
+              </button>
+            </div>
+            <div
+              class="absolute top-0 right-4 hidden sm:block w-28 md:w-32 lg:w-40 xl:w-auto"
+            >
+              <img src="Images/stone.png" />
+            </div>
+          </div>
+
+          <div class="w-2/5 hidden sm:block ml-6 md:ml-0">
+            <img src="Images/introImg.png" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END: Intro-->
+
+    <!-- START: Customers -->
+    <div class="swiper firstSwiper m-8">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img class="mx-auto" src="Images/humanoo.png" />
+        </div>
+        <div class="swiper-slide">
+          <img class="mx-auto" src="Images/expatrio.png" />
+        </div>
+        <div class="swiper-slide">
+          <img class="mx-auto" src="Images/pecunia.png" />
+        </div>
+        <div class="swiper-slide">
+          <img class="mx-auto" src="Images/maiwald.png" />
+        </div>
+        <div class="swiper-slide">
+          <img class="mx-auto" src="Images/maiwald.png" />
+        </div>
+        <div class="swiper-slide">
+          <img class="mx-auto" src="Images/betonga.png" />
+        </div>
+      </div>
+    </div>
+    <!-- END: Customers -->
+
+    <!-- START: Intro 2-->
+    <div class="flex flex-wrap p-8 items-center">
+      <div class="flex justify-center w-full md:w-1/2">
+        <div>
+          <h1 class="text-3xl mb-2">
+            Die einzige Größe<br />
+            die zählt, ist die<br />
+            deiner Vision<br />
+          </h1>
+          <h3 class="text-sm">
+            Wir begleiten dich bei jedem Projekt,<br />
+            egal ob Website, Webshop oder <br />
+            Applikation.
+          </h3>
+          <br />
+          <button
+            type="button"
+            class="focus:outline-none font-bold text-black bg-emerald-100 hover:bg-emerald-300 focus:ring-4 focus:ring-emerald-100 font-medium rounded-lg text-sm px-11 py-2.5 mr-2 mb-2 dark:focus:ring-emerald-700"
+          >
+            Let's talk
+          </button>
+        </div>
+      </div>
+      <div class="flex flex-col items-center justify-center w-full md:w-1/2">
+        <div
+          class="pl-6 bg-left bg-no-repeat bg-[length:32px]"
+          style="background-image: url('Images/Grupo\ 95.png')"
+        >
+          <div class="p-8 border-b-2 border-emerald-300 mb-2">
+            <div class="w-64">
+              <div class="text-L font-bold">WordPress Webseiten</div>
+              <div class="text-xs">
+                Wir begleiten dich bei jedem Projekt, egal ob Website, Webshop
+                oder Applikation.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="pl-6 bg-left bg-no-repeat bg-[length:32px]"
+          style="background-image: url('Images/Grupo\ 96.png')"
+        >
+          <div class="p-8 border-b-2 border-emerald-300 mb-2">
+            <div class="w-64">
+              <div class="text-L font-bold">WordPress Webshops</div>
+              <div class="text-xs">
+                Wir begleiten dich bei jedem Projekt, egal ob Website, Webshop
+                oder Applikation.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="pl-6 bg-left bg-no-repeat bg-[length:32px]"
+          style="background-image: url('Images/Grupo\ 99.png')"
+        >
+          <div class="p-8 border-b-2 border-emerald-300 mb-2">
+            <div class="w-64">
+              <div class="text-L font-bold">WordPress SEO & Wartung</div>
+              <div class="text-xs">
+                Wir begleiten dich bei jedem Projekt, egal ob Website, Webshop
+                oder Applikation.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END: Intro2 -->
+    <!-- START: Middle Img-->
+    <div class="flex items-center h-[50vw] max-h-[32rem] relative">
+      <div class="absolute w-full h-4 bg-emerald-300 top-1/2 -z-10"></div>
+      <div
+        class="w-full h-full bg-no-repeat bg-contain bg-center"
+        style="background-image: url('Images/middleImg.png')"
+      ></div>
+    </div>
+    <!-- END: Middle Img -->
+
+    <!-- START: Middle Description-->
+    <div class="container mx-auto relative p-8 md:py-0 md:-top-8">
+      <div
+        class="text-2xl relative font-bold bottom-0 md:text-3xl max-w-screen-sm"
+      >
+        Immer selbst Programmiertund <br />
+        Pixelgenau auf deine Ziele abgestimmt.<br />
+        Wir liefern den gesamten Prozess.
+      </div>
+    </div>
+    <!-- END: Middle Description -->
+
+    <!-- START: Responsibilities 2 -->
+    <div class="flex p-10 flex-wrap flex-row justify-center md:w-full">
+      <div
+        class="p-8 border-emerald-300 mb-4 mr-4 border-l-2 bg-right-top bg-no-repeat bg-[length:32px]"
+        style="background-image: url('Images/Grupo\ 95.png')"
+      >
+        <div class="w-64">
+          <div class="text-L font-bold">Design</div>
+          <div class="text-xs">
+            Brading, UI & UX, Illustration und Motion Design.
+          </div>
+        </div>
+      </div>
+      <div
+        class="p-8 border-emerald-300 mb-4 mr-4 border-l-2 bg-right-top bg-no-repeat bg-[length:32px]"
+        style="background-image: url('Images/Grupo\ 96.png')"
+      >
+        <div class="w-64">
+          <div class="text-L font-bold">Entwicklung</div>
+          <div class="text-xs">
+            WordPress & Custom Code for perfekte Performance.
+          </div>
+        </div>
+      </div>
+      <div
+        class="p-8 border-emerald-300 mb-4 mr-4 border-l-2 bg-right-top bg-no-repeat bg-[length:32px]"
+        style="background-image: url('Images/Grupo\ 99.png')"
+      >
+        <div class="w-64">
+          <div class="text-L font-bold">Growth & Maintenance</div>
+          <div class="text-xs">Lorem Ipsum</div>
+        </div>
+      </div>
+    </div>
+    <!-- END: Responsibilities -->
+
+    <!-- START: Last Slide-->
+    <div class="secondSwiper swipper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="Images/Slide1.png" /></div>
+        <div class="swiper-slide"><img src="Images/Slide2.png" /></div>
+        <div class="swiper-slide"><img src="Images/slide3.png" /></div>
+      </div>
+    </div>
+    <!-- Last Slide -->
+    <script type="module" src="js/index.js"></script>
+  </body>
+</html>
